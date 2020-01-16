@@ -14,6 +14,7 @@ import Secret from './pages/Secret'
 import Unauthorized from './pages/Unauthorized'
 import Shows from './pages/Shows'
 import EmailList from './pages/EmailList'
+import Bookings from './pages/Bookings'
 
 const App = () => {
   return (
@@ -34,6 +35,9 @@ const App = () => {
             <li>
               <NavLink to="/emailList">Email List</NavLink>
             </li>
+            <li>
+              <NavLink to="/bookings">Bookings</NavLink>
+            </li>
           </ul>
         </nav>
       </header>
@@ -45,6 +49,7 @@ const App = () => {
         <Route exact path="/unauthorized" component={Unauthorized}></Route>
         <Route exact path="/shows" component={Shows}></Route>
         <Route exact path="/emailList" component={EmailList}></Route>
+        <Route exact path="/bookings" component={Bookings}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
