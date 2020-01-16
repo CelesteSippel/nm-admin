@@ -23,21 +23,13 @@ const Bookings = () => {
         <main className="booking-database">
           {bookingData.map((booking, i) => {
             return (
-              <Link
-                to={{
-                  pathname: `/${booking.id}`,
-                  state: { booking },
-                }}
-              >
-                {' '}
-                <section className="booking-card" key={i}>
-                  <section className="booking-info">
-                    <h2 className="contact-name">{booking.contactName}</h2>
-                    <h3 className="contact-email">{booking.email}</h3>
-                    <h3 className="event-date">{booking.eventDate}</h3>
-                  </section>
+              <section className="booking-card">
+                <section className="booking-info">
+                  <h2 className="contact-name">{booking.contactName}</h2>
+                  <h3 className="contact-email">{booking.email}</h3>
+                  <h3 className="event-date">{booking.eventDate}</h3>
                 </section>
-              </Link>
+              </section>
             )
           })}
         </main>

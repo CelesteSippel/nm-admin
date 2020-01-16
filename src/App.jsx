@@ -30,6 +30,9 @@ const App = () => {
               <NavLink to="/signup">Sign Up</NavLink>
             </li>
             <li>
+              <NavLink to="/login">Login</NavLink>
+            </li>
+            <li>
               <NavLink to="/shows">Shows</NavLink>
             </li>
             <li>
