@@ -24,7 +24,7 @@ const Header = () => {
 
           <li>
             <Link to="/bookings" className="nav-details">
-              bookings
+              Bookings
             </Link>
           </li>
         </ul>

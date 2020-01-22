@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import Header from '../Components/Header'
+import SideNav from '../Components/SideNav'
 const Bookings = () => {
   const [bookingData, setBookingData] = useState([])
 
@@ -18,6 +20,8 @@ const Bookings = () => {
 
   return (
     <>
+      <Header />
+      <SideNav />
       <div>
         <h1 className="booking-title">Bookings</h1>
         <main className="booking-database">

@@ -8,17 +8,19 @@ const HomePage = () => {
       <Header />
       <SideNav />
       <div>
-        <section className="home-buttons">
-          <Link to="/Shows">
-            <button className="admin-button">Shows</button>
-          </Link>
-          <Link to="/EmailList">
-            <button className="admin-button">Emails</button>
-          </Link>
-          <Link to="/Bookings">
-            <button className="admin-button">Bookings</button>
-          </Link>
-        </section>
+        <div className="homeContainer">
+          <section className="home-buttons">
+            <Link to="/Shows">
+              <button className="admin-button">Shows</button>
+            </Link>
+            <Link to="/EmailList">
+              <button className="admin-button">Emails</button>
+            </Link>
+            <Link to="/Bookings">
+              <button className="admin-button">Bookings</button>
+            </Link>
+          </section>
+        </div>
         <footer>Made with 💛 Celeste Sippel</footer>
       </div>
     </>

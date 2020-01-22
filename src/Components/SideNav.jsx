@@ -17,8 +17,8 @@ const SideNav = () => {
       <div id="sidebarMenu">
         <ul class="sidebarMenuInner">
           <li>
-            <Link to="/Music" className="side-nav-details">
-              Music
+            <Link to="/EmailList" className="side-nav-details">
+              Emails
             </Link>
           </li>
           <li>
@@ -27,8 +27,8 @@ const SideNav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Contact" className="side-nav-details">
-              Contact
+            <Link to="/Bookings" className="side-nav-details">
+              Bookings
             </Link>
           </li>
         </ul>

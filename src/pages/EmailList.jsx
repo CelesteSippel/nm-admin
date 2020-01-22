@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import SideNav from '../Components/SideNav'
+import Header from '../Components/Header'
 
 const EmailList = () => {
   const [emailLists, setEmailLists] = useState([])
@@ -15,21 +17,25 @@ const EmailList = () => {
   }, [])
 
   return (
-    <div>
-      <h2>Email List</h2>
-      <section>
-        <div className="email-list-info">
-          {emailLists.map(emailList => {
-            return (
-              <ul className="email-box">
-                <li className="email-detail">{emailList.email}</li>
-              </ul>
-            )
-          })}
-        </div>
-      </section>
-      <footer>Made with 💛 Celeste Sippel</footer>
-    </div>
+    <>
+      <Header />
+      <SideNav />
+      <div>
+        <h2>Email List</h2>
+        <section>
+          <div className="email-list-info">
+            {emailLists.map(emailList => {
+              return (
+                <ul className="email-box">
+                  <li className="email-detail">{emailList.email}</li>
+                </ul>
+              )
+            })}
+          </div>
+        </section>
+        <footer>Made with 💛 Celeste Sippel</footer>
+      </div>
+    </>
   )
 }
 
