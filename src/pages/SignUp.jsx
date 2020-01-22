@@ -62,7 +62,7 @@ const SignUp = () => {
           onChange={updateUser}
           name="password"
         />
-        <button>Create account</button>
+        <button className="button">Create account</button>
       </form>
     </div>
   )

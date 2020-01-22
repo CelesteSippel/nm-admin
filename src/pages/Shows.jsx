@@ -3,11 +3,13 @@ import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 
 const AddShow = () => {
-  const [resetForm, setResetForm] = useState(false)
+  // const [resetForm, setResetForm] = useState(false)
   const [dateOfEvent, setDateOfEvent] = useState('')
   const [eventName, setEventName] = useState('')
   const [venues, setVenues] = useState([])
   const [venueId, setVenueId] = useState()
+  const [showId, setShowId] = useState()
+  const [shows, setShows] = useState([])
 
   const submitData = async event => {
     event.preventDefault()
@@ -18,7 +20,10 @@ const AddShow = () => {
       venueId: parseInt(venueId),
     })
     console.log(resp.data)
-    setResetForm(true)
+    // setResetForm(true)
+    setEventName('')
+    setDateOfEvent('')
+    setVenueId()
   }
 
   const getVenueData = async () => {
@@ -31,11 +36,29 @@ const AddShow = () => {
     getVenueData()
   }, [])
 
+  const getShowData = async showId => {
+    const resp = await axios.get('https://localhost:5001/api/Show/')
+    console.log(resp.data)
+    setShows(resp.data)
+  }
+  const deleteData = async () => {
+    const resp = await axios.delete('https://localhost:5001/api/Show/' + showId)
+    console.log(resp.data)
+    setShows(prev => {
+      console.log([...prev].filter(f => f.id !== showId))
+      return [...prev].filter(f => f.id !== parseInt(showId))
+    })
+  }
+
+  useEffect(() => {
+    getShowData()
+  }, [])
+
   return (
     <div className="lower-section">
-      <h1 className="form">Add Show to User Website</h1>
-      <main className="form-section">
-        {resetForm && <Redirect to="/" />}
+      <h1 className="form">Add Show</h1>
+      <div className="form-section">
+        {/* {resetForm && <Redirect to="/" />} */}
         <form
           onSubmit={e => {
             submitData(e)
@@ -63,9 +86,10 @@ const AddShow = () => {
               type="text"
             />
           </div>
-          <div>
+          <div className="form-style">
             <label htmlFor="drop-down">Venue:</label>
             <select
+              className="option"
               onChange={e => {
                 setVenueId(e.target.value)
               }}
@@ -78,11 +102,46 @@ const AddShow = () => {
             </select>
           </div>
 
-          <div className="button">
-            <button type="submit">Submit</button>
+          <div>
+            <span>
+              <input type="submit" value="Submit" className="form-button" />
+            </span>
           </div>
         </form>
-      </main>
+      </div>
+      <h1 className="form">Delete Show</h1>
+      <div className="form-section">
+        <form
+          onSubmit={e => {
+            e.preventDefault()
+            deleteData(e)
+            alert('Show Deleted')
+          }}
+          className="add-show-form"
+        >
+          <div className="form-hates-me">
+            <label htmlFor="drop-down">Show:</label>
+            <select
+              className="option"
+              onChange={e => {
+                setShowId(e.target.value)
+              }}
+              type="dropdown"
+            >
+              <option>select a show</option>
+              {shows.map(show => {
+                return <option value={show.id}>{show.eventName}</option>
+              })}
+            </select>
+          </div>
+          <div>
+            <span>
+              <input type="submit" value="Submit" className="form-button" />
+            </span>
+          </div>
+        </form>
+      </div>
+
       <footer>Made with 💛 Celeste Sippel</footer>
     </div>
   )

@@ -33,6 +33,7 @@ const Bookings = () => {
             )
           })}
         </main>
+        <footer>Made with 💛 Celeste Sippel</footer>
       </div>
     </>
   )

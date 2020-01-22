@@ -4,6 +4,7 @@ import {
   NavLink,
   Route,
   Switch,
+  Link,
 } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
@@ -19,31 +20,6 @@ import Bookings from './pages/Bookings'
 const App = () => {
   return (
     <Router>
-      <header>
-        <h1>Test for Admin</h1>
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/">Go Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/signup">Sign Up</NavLink>
-            </li>
-            <li>
-              <NavLink to="/login">Login</NavLink>
-            </li>
-            <li>
-              <NavLink to="/shows">Shows</NavLink>
-            </li>
-            <li>
-              <NavLink to="/emailList">Email List</NavLink>
-            </li>
-            <li>
-              <NavLink to="/bookings">Bookings</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </header>
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
         <Route exact path="/login" component={Login}></Route>

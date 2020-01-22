@@ -28,6 +28,7 @@ const EmailList = () => {
           })}
         </div>
       </section>
+      <footer>Made with 💛 Celeste Sippel</footer>
     </div>
   )
 }

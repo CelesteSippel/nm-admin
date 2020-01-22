@@ -48,24 +48,26 @@ const Login = () => {
         <Redirect to={`/secret/${usernameFromApi}`} />
       ) : (
         <div>
+          <header className="welcome">Welcome back!</header>
           <form onSubmit={submitForm}>
-            <header>Welcome back!</header>
-            <input
-              type="text"
-              placeholder="username"
-              required
-              value={user.username}
-              onChange={updateUser}
-              name="username"
-            />
-            <input
-              type="password"
-              placeholder="password"
-              required
-              onChange={updateUser}
-              name="password"
-            />
-            <button>Log in</button>
+            <section className="login-form">
+              <input
+                type="text"
+                placeholder="username"
+                required
+                value={user.username}
+                onChange={updateUser}
+                name="username"
+              />
+              <input
+                type="password"
+                placeholder="password"
+                required
+                onChange={updateUser}
+                name="password"
+              />
+              <button className="button">Log in</button>
+            </section>
           </form>
         </div>
       )}

@@ -9,15 +9,324 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  display: flex;
+  position: relative;
+  color: white;
+  background-color: rgb(65, 159, 173);
+  font-family: 'Raleway', sans-serif;
+}
+.main {
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  margin-top: 60px;
+}
+.mainInner {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.mainInner div {
+  display: table-cell;
+  vertical-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  padding-bottom: 20rem;
+}
+#sidebarMenu {
+  height: 50%;
+  position: fixed;
+  right: 0;
+  width: 150px;
+  z-index: 15;
+  margin-top: 9rem;
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+  background: transparent;
+  /* background: linear-gradient(
+    180deg,
+    rgb(79, 221, 243) 0%,
+    rgb(30, 76, 83) 100%
+  ); */
+}
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color: #fff;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.sidebarMenuInner li a {
+  color: #fff;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type='checkbox']:checked ~ #sidebarMenu {
+  transform: translateX(0);
 }
 
-form {
+input[type='checkbox'] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  visibility: visible;
+
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  margin-top: 6rem;
+  top: -30px;
+  left: 300px;
+  height: 28px;
+  width: 28px;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: right;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  margin-top: 3px;
+}
+input[type='checkbox']:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+a:link {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  height: 5.5rem;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+  font-weight: light;
+  color: white;
+}
+
+.sub-nav {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  display: none;
+  padding: 0.5rem;
+}
+
+.nav-details {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  padding: 0rem;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  font-size: 1rem;
+  height: 36px;
+  width: 72px;
+  color: white;
+  background-color: salmon;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.home-buttons {
   display: flex;
   flex-direction: column;
 }
+.admin-button {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  height: 10rem;
+  width: 13rem;
+  color: white;
+  background-color: salmon;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.admin-button:hover {
+  background-color: black;
+  color: white;
+}
 
-button {
-  width: 12rem;
-  background-color: aqua;
-  color: blue;
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+.form-section {
+  display: flex;
+  box-shadow: black 4px 4px 10px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  height: 25rem;
+  width: 20rem;
+}
+.form-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.form-hates-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+input {
+  height: 30px;
+  border-radius: 10%;
+}
+
+.option {
+  height: 30px;
+}
+.form-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  height: 36px;
+  width: 72px;
+  color: white;
+  background-color: salmon;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.form-button:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .admin-button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    height: 9rem;
+    width: 11rem;
+    color: white;
+    background-color: salmon;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .admin-button:hover {
+    background-color: black;
+    color: white;
+  }
 }
