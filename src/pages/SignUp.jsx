@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 const SignUp = () => {
   const [user, setUser] = useState({
     username: '',
@@ -64,6 +64,9 @@ const SignUp = () => {
         />
         <button className="button">Create account</button>
       </form>
+      <Link to="/">
+        <button className="">Login</button>
+      </Link>
     </div>
   )
 }

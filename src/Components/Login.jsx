@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 const Login = () => {
   const [successfullyCreated, setSuccessfullyCreated] = useState(false)
   const [usernameFromApi, setUsernameFromApi] = useState('')
@@ -69,6 +69,9 @@ const Login = () => {
               <button className="button">Log in</button>
             </section>
           </form>
+          <Link to="/signup">
+            <button className="">Sign Up</button>
+          </Link>
         </div>
       )}
     </>

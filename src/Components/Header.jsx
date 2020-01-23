@@ -6,7 +6,7 @@ const Header = () => {
     <div>
       <nav className="navigation">
         <header>
-          <Link to="/" className="name">
+          <Link to="/secret/:username" className="name">
             New Mood
           </Link>
         </header>

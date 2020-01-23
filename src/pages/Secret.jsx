@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import SideNav from '../Components/SideNav'
+import Header from '../Components/Header'
 
 const Secret = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(true)
@@ -13,7 +16,26 @@ const Secret = () => {
   return (
     <>
       {isAuthenticated ? (
-        <div>This is only for users</div>
+        <div>
+          <Header />
+          <SideNav />
+          <div>
+            <div className="homeContainer">
+              <section className="home-buttons">
+                <Link to="/Shows">
+                  <button className="admin-button">Shows</button>
+                </Link>
+                <Link to="/EmailList">
+                  <button className="admin-button">Emails</button>
+                </Link>
+                <Link to="/Bookings">
+                  <button className="admin-button">Bookings</button>
+                </Link>
+              </section>
+            </div>
+            <footer>Made with 💛 Celeste Sippel</footer>
+          </div>
+        </div>
       ) : (
         <Redirect to="/unauth" />
       )}
