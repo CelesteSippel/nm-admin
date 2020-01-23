@@ -34,6 +34,7 @@ const Bookings = () => {
                   <h2 className="contact-name">{booking.contactName}</h2>
                   <h3 className="contact-email">{booking.email}</h3>
                   <h3 className="event-date">{booking.eventDate}</h3>
+                  <h3 className="event-details">{booking.eventDetails}</h3>
                 </section>
               </section>
             )
