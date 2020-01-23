@@ -7,7 +7,9 @@ const EmailList = () => {
   const [emailLists, setEmailLists] = useState([])
 
   const getEmailListData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/EmailList')
+    const resp = await axios.get(
+      'https://new-mood-api.herokuapp.com/api/EmailList'
+    )
     console.log(resp.data)
     setEmailLists(resp.data)
   }

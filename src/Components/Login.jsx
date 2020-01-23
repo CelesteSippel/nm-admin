@@ -26,7 +26,10 @@ const Login = () => {
 
   const submitForm = async e => {
     e.preventDefault()
-    const resp = await axios.post('https://localhost:5001/auth/login', user)
+    const resp = await axios.post(
+      'https://new-mood-api.herokuapp.com/auth/login',
+      user
+    )
     console.log(resp.data)
     localStorage.setItem('token', resp.data.token)
     localStorage.setItem('expiresAt', resp.data.expirationTime)

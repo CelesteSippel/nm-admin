@@ -16,11 +16,14 @@ const AddShow = () => {
   const submitData = async event => {
     event.preventDefault()
 
-    const resp = await axios.post('https://localhost:5001/api/Show', {
-      dateOfEvent: dateOfEvent,
-      eventName: eventName,
-      venueId: parseInt(venueId),
-    })
+    const resp = await axios.post(
+      'https://new-mood-api.herokuapp.com/api/Show',
+      {
+        dateOfEvent: dateOfEvent,
+        eventName: eventName,
+        venueId: parseInt(venueId),
+      }
+    )
     console.log(resp.data)
     // setResetForm(true)
     setEventName('')
@@ -29,7 +32,7 @@ const AddShow = () => {
   }
 
   const getVenueData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/Venue')
+    const resp = await axios.get('https://new-mood-api.herokuapp.com/api/Venue')
     console.log(resp.data)
     setVenues(resp.data)
   }
@@ -39,12 +42,14 @@ const AddShow = () => {
   }, [])
 
   const getShowData = async showId => {
-    const resp = await axios.get('https://localhost:5001/api/Show/')
+    const resp = await axios.get('https://new-mood-api.herokuapp.com/api/Show/')
     console.log(resp.data)
     setShows(resp.data)
   }
   const deleteData = async () => {
-    const resp = await axios.delete('https://localhost:5001/api/Show/' + showId)
+    const resp = await axios.delete(
+      'new-mood-api.herokuapp.com/api/Show/' + showId
+    )
     console.log(resp.data)
     setShows(prev => {
       console.log([...prev].filter(f => f.id !== showId))

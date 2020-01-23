@@ -7,7 +7,9 @@ const Bookings = () => {
   const [bookingData, setBookingData] = useState([])
 
   const getBookingData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/Booking')
+    const resp = await axios.get(
+      'https://new-mood-api.herokuapp.com/api/Booking'
+    )
     console.log(resp.data)
     setBookingData(resp.data)
   }
