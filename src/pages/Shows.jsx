@@ -66,7 +66,6 @@ const AddShow = () => {
       <Header />
       <SideNav />
       <div className="lower-section">
-        <h1 className="form">Add Show</h1>
         <div className="form-section">
           {/* {resetForm && <Redirect to="/" />} */}
           <form
@@ -76,6 +75,7 @@ const AddShow = () => {
             }}
             className="add-show-form"
           >
+            <h1 className="form">Add Show</h1>
             <div className="form-style">
               <label htmlFor="date-of-event">Date of Show:</label>
               <input
@@ -84,6 +84,7 @@ const AddShow = () => {
                 }}
                 value={dateOfEvent}
                 type="datetime-local"
+                className="date"
               />
             </div>
             <div className="form-style">
@@ -94,6 +95,7 @@ const AddShow = () => {
                 }}
                 value={eventName}
                 type="text"
+                className="event"
               />
             </div>
             <div className="form-style">
@@ -119,7 +121,7 @@ const AddShow = () => {
             </div>
           </form>
         </div>
-        <h1 className="form">Delete Show</h1>
+
         <div className="form-section">
           <form
             onSubmit={e => {
@@ -129,6 +131,7 @@ const AddShow = () => {
             }}
             className="add-show-form"
           >
+            <h1 className="form">Delete Show</h1>
             <div className="form-hates-me">
               <label htmlFor="drop-down">Show:</label>
               <select
@@ -146,13 +149,15 @@ const AddShow = () => {
             </div>
             <div>
               <span>
-                <input type="submit" value="Submit" className="form-button" />
+                <input
+                  type="submit"
+                  value="Submit"
+                  className="delete-form-button"
+                />
               </span>
             </div>
           </form>
         </div>
-
-        <footer>Made with 💛 Celeste Sippel</footer>
       </div>
     </>
   )

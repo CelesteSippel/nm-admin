@@ -22,20 +22,21 @@ const EmailList = () => {
     <>
       <Header />
       <SideNav />
-      <div>
-        <h2>Email List</h2>
-        <section>
-          <div className="email-list-info">
-            {emailLists.map(emailList => {
-              return (
-                <ul className="email-box">
-                  <li className="email-detail">{emailList.email}</li>
-                </ul>
-              )
-            })}
-          </div>
-        </section>
-        <footer>Made with 💛 Celeste Sippel</footer>
+      <div className="email-lower-section">
+        <h2 className="email">Email List</h2>
+        <div className="email-container">
+          <section className="email-list-info">
+            <div>
+              {emailLists.map(emailList => {
+                return (
+                  <ul className="email-box">
+                    <li className="email-detail">{emailList.email}</li>
+                  </ul>
+                )
+              })}
+            </div>
+          </section>
+        </div>
       </div>
     </>
   )

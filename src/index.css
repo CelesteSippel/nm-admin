@@ -59,7 +59,6 @@ body {
 .sidebarMenuInner li {
   list-style: none;
   color: #fff;
-  /* text-transform: uppercase; */
   font-weight: bold;
   padding: 20px;
   cursor: pointer;
@@ -72,7 +71,6 @@ body {
 }
 .sidebarMenuInner li a {
   color: #fff;
-  /* text-transform: uppercase; */
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
@@ -88,7 +86,6 @@ input[type='checkbox'] {
 }
 .sidebarIconToggle {
   visibility: visible;
-
   transition: all 0.3s;
   box-sizing: border-box;
   cursor: pointer;
@@ -166,13 +163,12 @@ li {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-
   padding-top: 1rem;
   height: 5.5rem;
   margin-left: 1rem;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: light;
   color: white;
 }
@@ -188,7 +184,6 @@ li {
   display: flex;
   flex-direction: row;
   visibility: hidden;
-  /* display: none; */
   margin: 0;
   padding: 0;
 }
@@ -225,14 +220,14 @@ li {
   align-items: center;
   width: 100%;
   justify-content: center;
-  border: solid black 5px;
+  /* border: solid black 5px; */
   margin: 0;
   padding: 0;
 }
 
 .home-buttons {
   display: flex;
-  border: solid purple 3px;
+  /* border: solid purple 3px; */
   flex-direction: column;
   justify-content: center;
 }
@@ -259,73 +254,311 @@ li {
   color: white;
 }
 
+.add-show-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .form {
   display: flex;
   justify-content: center;
-  margin-top: 0rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
 }
 .form-section {
   display: flex;
   box-shadow: black 4px 4px 10px;
   border-radius: 5px;
   margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 10rem;
+  margin-right: 8rem;
   margin-bottom: 2rem;
-  height: 25rem;
-  width: 20rem;
+  height: 45rem;
+  width: 40rem;
 }
 .form-style {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .form-hates-me {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 2rem;
 }
 
 input {
-  height: 30px;
+  height: 40px;
+  width: 200px;
   border-radius: 10%;
 }
 
+.event {
+  font-size: x-large;
+}
+.date {
+  font-size: x-large;
+}
 .option {
-  height: 30px;
+  font-size: x-large;
+  height: 50px;
+  width: 200px;
 }
 .form-button {
   display: flex;
-  justify-content: center;
-  margin-left: 7rem;
-  margin-top: 1rem;
-  font-size: 1rem;
-  height: 36px;
-  width: 72px;
+
+  margin-left: 16rem;
+  margin-top: 4rem;
+  font-size: 2rem;
+  height: 4rem;
+  width: 7.5rem;
   color: white;
   background-color: salmon;
   font-weight: 500;
   border-radius: 4px;
 }
-.form-button:hover {
+
+.delete-form-button {
+  display: flex;
+  margin-left: 16rem;
+  margin-top: 18rem;
+  font-size: 2rem;
+  height: 4rem;
+  width: 7.5rem;
+  color: white;
+  background-color: salmon;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.form-button:hover,
+.delete-form-button:hover {
   background-color: black;
   color: white;
 }
 
-footer {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+@media (min-width: 1280px) {
+  .email-lower-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .lower-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .homeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;
+    margin-left: 7rem;
+    margin-right: 3rem;
+    /* border: solid black 5px; */
+  }
+
+  .home-buttons {
+    display: flex;
+    /* border: solid purple 3px; */
+    flex-direction: row;
+  }
+
+  .admin-button {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    height: 22rem;
+    width: 25rem;
+
+    color: white;
+    background-color: salmon;
+    font-size: 3.5rem;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .admin-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%s;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .sub-nav {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    visibility: visible;
+
+    padding: 0.5rem;
+  }
+
+  .nav-details {
+    display: flex;
+    flex-direction: row;
+
+    color: white;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+
+  .sidebarIconToggle {
+    visibility: hidden;
+    display: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    margin-top: 6rem;
+    top: -30px;
+    left: 300px;
+    height: 28px;
+    width: 28px;
+  }
+
+  .email-container {
+    display: flex;
+    align-items: flex-start;
+
+    flex-direction: column;
+    box-shadow: black 4px 4px 10px;
+    width: 100rem;
+    height: 40rem;
+    margin-left: 10rem;
+  }
+
+  .email {
+    font-size: 3rem;
+    justify-content: center;
+  }
+
+  .email-list-info {
+    display: flex;
+    flex-direction: column;
+    border: solid 5px hotpink;
+    justify-content: flex-start;
+  }
+  .email-detail {
+    font-size: 2rem;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 890px) and (max-width: 1280px) and (orientation: landscape) {
+  .home-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .homeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .admin-button {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    height: 12rem;
+    width: 15rem;
+
+    color: white;
+    background-color: salmon;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .admin-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sub-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    visibility: visible;
+    display: flex;
+    padding: 0.5rem;
+  }
+
+  .nav-details {
+    display: flex;
+    flex-direction: row;
+
+    color: white;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+
+  .sidebarIconToggle {
+    visibility: hidden;
+    display: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    margin-top: 6rem;
+    top: -30px;
+    left: 300px;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 890px) and (orientation: landscape) {
   .home-buttons {
     display: flex;
     flex-direction: row;
@@ -368,9 +601,16 @@ footer {
     color: white;
   }
 
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .sub-nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     visibility: visible;
     display: flex;
     padding: 0.5rem;
@@ -379,8 +619,9 @@ footer {
   .nav-details {
     display: flex;
     flex-direction: row;
+
     color: white;
-    padding: 0rem;
+    padding: 1.5rem;
     font-size: 1rem;
     font-weight: lighter;
   }
@@ -427,6 +668,12 @@ footer {
     color: white;
   }
 
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .sub-nav {
     display: flex;
     flex-direction: row;
@@ -439,7 +686,7 @@ footer {
     display: flex;
     flex-direction: row;
     color: white;
-    padding: 0rem;
+    padding: 1.5rem;
     font-size: 1rem;
     font-weight: lighter;
   }

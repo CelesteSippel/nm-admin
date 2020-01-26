@@ -21,7 +21,6 @@ const HomePage = () => {
             </Link>
           </section>
         </div>
-        <footer>Made with 💛 Celeste Sippel</footer>
       </div>
     </>
   )

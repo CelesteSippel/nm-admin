@@ -19,7 +19,7 @@ const Secret = () => {
         <div>
           <Header />
           <SideNav />
-          <div>
+          <div className="lower-section">
             <div className="homeContainer">
               <section className="home-buttons">
                 <Link to="/Shows">
@@ -33,7 +33,6 @@ const Secret = () => {
                 </Link>
               </section>
             </div>
-            <footer>Made with 💛 Celeste Sippel</footer>
           </div>
         </div>
       ) : (

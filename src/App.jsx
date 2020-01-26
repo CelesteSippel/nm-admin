@@ -7,7 +7,7 @@ import {
   Link,
 } from 'react-router-dom'
 
-import HomePage from './pages/HomePage'
+// import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 import SignUp from './pages/SignUp'
 import Secret from './pages/Secret'
@@ -22,7 +22,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Landing}></Route>
-        <Route exact path="/homepage" component={HomePage}></Route>
+        {/* <Route exact path="/homepage" component={HomePage}></Route> */}
         <Route exact path="/signup" component={SignUp}></Route>
         <Route exact path="/secret/:username" component={Secret}></Route>
         <Route exact path="/unauthorized" component={Unauthorized}></Route>
