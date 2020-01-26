@@ -29,7 +29,7 @@ const EmailList = () => {
             <div>
               {emailLists.map(emailList => {
                 return (
-                  <ul className="email-box">
+                  <ul>
                     <li className="email-detail">{emailList.email}</li>
                   </ul>
                 )

@@ -30,18 +30,17 @@ const Bookings = () => {
           {bookingData.map((booking, i) => {
             return (
               <section className="booking-card">
-                <section className="booking-info">
-                  <h2 className="contact-name">{booking.contactName}</h2>
-                  <h3 className="contact-email">{booking.email}</h3>
-                  <h3 className="event-date">{booking.eventDate}</h3>
-                  <h3 className="event-date">{booking.eventLocation}</h3>
-                  <h3 className="event-details">{booking.eventDetails}</h3>
-                </section>
+                <ul className="booking-info">
+                  <li className="booking-details">{booking.contactName}</li>
+                  <li className="booking-details">{booking.email}</li>
+                  <li className="booking-details">{booking.eventDate}</li>
+                  <li className="booking-details">{booking.eventLocation}</li>
+                  <li className="booking-details">{booking.eventDetails}</li>
+                </ul>
               </section>
             )
           })}
         </main>
-        <footer>Made with 💛 Celeste Sippel</footer>
       </div>
     </>
   )

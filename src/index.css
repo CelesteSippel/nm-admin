@@ -243,11 +243,10 @@ li {
   height: 12rem;
   width: 15rem;
   color: white;
-  background-color: salmon;
+  background-color: rgb(65, 159, 173);
   font-size: 2.5rem;
   font-weight: 500;
   border-radius: 4px;
-  border: solid red 3px;
 }
 .admin-button:hover {
   background-color: black;
@@ -348,9 +347,16 @@ input {
   .email-lower-section {
     display: flex;
     flex-direction: column;
+
+    width: 100px;
+    column-width: 45px;
+    column-gap: 0;
+    column-rule: none;
+
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
   }
 
   .lower-section {
@@ -358,6 +364,8 @@ input {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+    column-count: 2;
     width: 100%;
   }
 
@@ -374,12 +382,11 @@ input {
     height: 40rem;
     margin-left: 7rem;
     margin-right: 3rem;
-    /* border: solid black 5px; */
   }
 
   .home-buttons {
     display: flex;
-    /* border: solid purple 3px; */
+
     flex-direction: row;
   }
 
@@ -393,13 +400,14 @@ input {
     width: 25rem;
 
     color: white;
-    background-color: salmon;
+    box-shadow: black 4px 4px 10px;
+    background-color: rgb(65, 159, 173);
     font-size: 3.5rem;
     font-weight: 500;
     border-radius: 4px;
   }
   .admin-button:hover {
-    background-color: black;
+    background-color: salmon;
     color: white;
   }
 
@@ -451,13 +459,13 @@ input {
 
   .email-container {
     display: flex;
-    align-items: flex-start;
-
+    justify-content: center;
     flex-direction: column;
+
     box-shadow: black 4px 4px 10px;
-    width: 100rem;
-    height: 40rem;
-    margin-left: 10rem;
+
+    width: 100%;
+    margin-left: 5rem;
   }
 
   .email {
@@ -467,12 +475,41 @@ input {
 
   .email-list-info {
     display: flex;
-    flex-direction: column;
-    border: solid 5px hotpink;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
   .email-detail {
     font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .booking-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+  }
+  .booking-database {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .booking-info {
+    height: 20rem;
+    width: 27rem;
+    font-size: 2rem;
+    box-shadow: black 4px 4px 10px;
+  }
+
+  .booking-details {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 

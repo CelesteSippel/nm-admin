@@ -143,7 +143,7 @@ const AddShow = () => {
               >
                 <option>select a show</option>
                 {shows.map(show => {
-                  return <option value={show.id}>{show.eventName}</option>
+                  return <option value={show.id}>{show.dateOfEvent}</option>
                 })}
               </select>
             </div>
