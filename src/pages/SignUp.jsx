@@ -35,42 +35,44 @@ const SignUp = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={submitForm}>
-        <header>Create a new Account!</header>
-        <input
-          type="text"
-          placeholder="username"
-          required
-          value={user.username}
-          onChange={updateUser}
-          name="username"
-        />
-        <input
-          type="text"
-          placeholder="full name"
-          onChange={updateUser}
-          name="fullname"
-        />
-        <input
-          type="email"
-          placeholder="email"
-          onChange={updateUser}
-          name="email"
-        />
-        <input
-          type="password"
-          placeholder="password"
-          required
-          onChange={updateUser}
-          name="password"
-        />
-        <button className="button">Create account</button>
-      </form>
-      <Link to="/">
-        <button className="">Login</button>
-      </Link>
-    </div>
+    <>
+      <header className="new-account">Create a new Account!</header>
+      <div className="sign-form-section">
+        <form onSubmit={submitForm} className="inputs">
+          <input
+            type="text"
+            placeholder="username"
+            required
+            value={user.username}
+            onChange={updateUser}
+            className="user-name"
+          />
+          <input
+            type="text"
+            placeholder="full name"
+            onChange={updateUser}
+            className="user-name"
+          />
+          <input
+            type="email"
+            placeholder="email"
+            onChange={updateUser}
+            className="user-name"
+          />
+          <input
+            type="password"
+            placeholder="password"
+            required
+            onChange={updateUser}
+            className="user-name"
+          />
+          <button className="sign-button">Create Account</button>
+        </form>
+        <Link to="/">
+          <button className="log-link">Login</button>
+        </Link>
+      </div>
+    </>
   )
 }
 
