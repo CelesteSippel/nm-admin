@@ -32,7 +32,7 @@ const Bookings = () => {
               <section className="booking-card">
                 <ul className="booking-info">
                   <li className="booking-details">{booking.contactName}</li>
-                  <li className="booking-details">{booking.email}</li>
+                  <li className="booking-details truncate">{booking.email}</li>
                   <li className="booking-details">{booking.eventDate}</li>
                   <li className="booking-details">{booking.eventLocation}</li>
                   <li className="booking-details">{booking.eventDetails}</li>

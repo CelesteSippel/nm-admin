@@ -57,10 +57,10 @@ const Login = () => {
               <input
                 type="text"
                 placeholder="username"
-                required
                 value={user.username}
                 onChange={updateUser}
                 className="user-name"
+                name="username"
               />
               <input
                 type="password"
@@ -68,6 +68,7 @@ const Login = () => {
                 required
                 onChange={updateUser}
                 className="user-name"
+                name="password"
               />
               <button className="sign-button">Log in</button>
 
