@@ -203,6 +203,71 @@ li {
   font-weight: lighter;
 }
 
+.sign-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: black 4px 4px 10px;
+  border-radius: 5px;
+  margin-top: 4rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 2rem;
+  height: 35rem;
+  width: 30rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: black 4px 4px 10px;
+  border-radius: 5px;
+  margin-top: 5rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+  height: 20rem;
+  width: 25rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-name {
+  width: 16rem;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.center-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-account {
+  display: flex;
+  justify-content: center;
+  font-size: 2.15rem;
+  margin-top: 10rem;
+  margin-left: 0rem;
+}
+
+.sign-button {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  height: 3.5rem;
+  width: 7rem;
+  color: white;
+  background-color: salmon;
+  font-weight: 500;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
 .button {
   display: flex;
   justify-content: center;
@@ -272,7 +337,7 @@ li {
   box-shadow: black 4px 4px 10px;
   border-radius: 5px;
   margin-top: 2rem;
-  margin-left: 10rem;
+  margin-left: 1rem;
   margin-right: 8rem;
   margin-bottom: 2rem;
   height: 45rem;
@@ -365,14 +430,12 @@ input {
   justify-content: center;
   flex-direction: column;
   box-shadow: black 4px 4px 10px;
-  width: 45%;
-  margin-left: 6rem;
+  width: 22rem;
 }
 
 .email {
   font-size: 3rem;
   justify-content: center;
-  margin-left: 6rem;
 }
 
 .email-list-info {
@@ -390,6 +453,16 @@ input {
   padding-bottom: 0.75rem;
 }
 
+.email-ul {
+  padding-left: 0rem;
+}
+.email-truncate {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .booking-title {
   display: flex;
   justify-content: center;
@@ -404,7 +477,7 @@ input {
 }
 .booking-info {
   height: 28rem;
-  width: 18rem;
+  width: 20rem;
   font-size: 2rem;
   padding: 1rem;
   box-shadow: black 4px 4px 10px;
@@ -412,7 +485,7 @@ input {
 
 .booking-card {
   height: 30rem;
-  width: 18rem;
+  width: 22rem;
 }
 .booking-details {
   margin-top: 1rem;
@@ -431,10 +504,11 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     box-shadow: black 4px 4px 10px;
     border-radius: 5px;
     margin-top: 4rem;
-    margin-left: 45rem;
+    margin-left: 8rem;
     margin-right: 8rem;
     margin-bottom: 2rem;
     height: 35rem;
@@ -448,11 +522,17 @@ input {
     box-shadow: black 4px 4px 10px;
     border-radius: 5px;
     margin-top: 6rem;
-    margin-left: 45rem;
-    margin-right: 8rem;
+    /* margin-left: 47.5rem; */
+    /* margin-right: 7rem; */
     margin-bottom: 2rem;
     height: 20rem;
     width: 25rem;
+  }
+
+  .center-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .inputs {
@@ -469,9 +549,8 @@ input {
   .new-account {
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 12rem;
-    margin-left: 38rem;
   }
 
   .sign-button {
@@ -624,6 +703,13 @@ input {
     padding-bottom: 0.75rem;
   }
 
+  .email-truncate {
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .booking-title {
     display: flex;
     justify-content: center;
@@ -771,7 +857,7 @@ input {
     box-shadow: black 4px 4px 10px;
     border-radius: 5px;
     margin-top: 4rem;
-    margin-left: 35rem;
+    margin-left: 8rem;
     margin-right: 8rem;
     margin-bottom: 2rem;
     height: 35rem;
@@ -785,7 +871,7 @@ input {
     box-shadow: black 4px 4px 10px;
     border-radius: 5px;
     margin-top: 5rem;
-    margin-left: 38rem;
+    /* margin-left: 38rem; */
     margin-right: 8rem;
     margin-bottom: 2rem;
     height: 20rem;
@@ -808,9 +894,14 @@ input {
     justify-content: center;
     font-size: 3rem;
     margin-top: 8rem;
-    margin-left: 28.5rem;
+    margin-left: 0rem;
   }
 
+  .center-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .sign-button {
     display: flex;
     justify-content: center;
@@ -843,7 +934,7 @@ input {
     margin-left: 10rem;
     margin-right: 8rem;
     margin-bottom: 2rem;
-    height: 45rem;
+    height: 40rem;
     width: 40rem;
   }
   .form-style {
@@ -917,15 +1008,47 @@ input {
     display: flex;
     flex-direction: column;
 
-    width: 100px;
-    column-width: 45px;
-    column-gap: 0;
-    column-rule: none;
-
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
+  }
+
+  .email-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: black 4px 4px 10px;
+    width: 45%;
+    margin-left: 6rem;
+  }
+
+  .email {
+    font-size: 3rem;
+    justify-content: center;
+    margin-left: 6rem;
+  }
+
+  .email-list-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .email-detail {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .email-truncate {
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .lower-section {
@@ -1251,7 +1374,7 @@ input {
     box-shadow: black 4px 4px 10px;
     border-radius: 5px;
     margin-top: 4rem;
-    margin-left: 30rem;
+    margin-left: 8rem;
     margin-right: 8rem;
     margin-bottom: 2rem;
     height: 35rem;
@@ -1265,7 +1388,7 @@ input {
     box-shadow: black 4px 4px 10px;
     border-radius: 5px;
     margin-top: 5rem;
-    margin-left: 45rem;
+    margin-left: 8rem;
     margin-right: 8rem;
     margin-bottom: 2rem;
     height: 20rem;
@@ -1288,7 +1411,13 @@ input {
     justify-content: center;
     font-size: 3rem;
     margin-top: 8rem;
-    margin-left: 25rem;
+    margin-left: 1rem;
+  }
+
+  .center-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .sign-button {
@@ -1324,7 +1453,7 @@ input {
     margin-left: 8rem;
     margin-right: 6rem;
     margin-bottom: 2rem;
-    height: 45rem;
+    height: 40rem;
     width: 30rem;
   }
   .form-style {
@@ -1366,7 +1495,7 @@ input {
     display: flex;
 
     margin-left: 12rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-size: 2rem;
     height: 4rem;
     width: 7.5rem;
@@ -1432,7 +1561,13 @@ input {
     justify-content: center;
     font-size: 3rem;
     margin-top: 8rem;
-    margin-left: 25rem;
+    /* margin-left: 1rem; */
+  }
+
+  .center-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .sign-form-section {
@@ -1468,7 +1603,7 @@ input {
     box-shadow: black 4px 4px 10px;
     border-radius: 5px;
     margin-top: 5rem;
-    margin-left: 45rem;
+    /* margin-left: 30rem; */
     margin-right: 8rem;
     margin-bottom: 2rem;
     height: 20rem;
@@ -1604,6 +1739,13 @@ input {
     padding-bottom: 0.75rem;
   }
 
+  .email-truncate {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .booking-title {
     display: flex;
     justify-content: center;
@@ -1631,6 +1773,96 @@ input {
     margin-top: 1rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+  }
+
+  .add-show-form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+  .form-section {
+    display: flex;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    height: 45rem;
+    width: 30rem;
+  }
+  .form-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .form-hates-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  input {
+    height: 40px;
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .event {
+    font-size: x-large;
+  }
+  .date {
+    font-size: x-large;
+  }
+  .option {
+    font-size: x-large;
+    height: 50px;
+    width: 200px;
+  }
+  .form-button {
+    display: flex;
+
+    margin-left: 12rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 7.5rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  .delete-form-button {
+    display: flex;
+    margin-left: 12rem;
+    margin-top: 18rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 7.5rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .form-button:hover,
+  .delete-form-button:hover {
+    background-color: black;
+    color: white;
   }
 }
 
@@ -1738,12 +1970,6 @@ input {
   .email-lower-section {
     display: flex;
     flex-direction: column;
-
-    width: 100px;
-    column-width: 45px;
-    column-gap: 0;
-    column-rule: none;
-
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -1752,17 +1978,17 @@ input {
 
   .email-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    margin-left: 1rem;
+    width: 40rem;
     box-shadow: black 4px 4px 10px;
-    width: 45%;
-    margin-left: 6rem;
   }
 
   .email {
     font-size: 3rem;
-    justify-content: center;
-    margin-left: 6rem;
+    align-items: center;
+    margin-left: 1rem;
   }
 
   .email-list-info {
@@ -1778,6 +2004,13 @@ input {
     flex-wrap: wrap;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .email-truncate {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .booking-title {
@@ -1807,6 +2040,171 @@ input {
     margin-top: 1rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+  }
+
+  .lower-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    column-count: 2;
+    width: 100%;
+  }
+  .add-show-form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+  .form-section {
+    display: flex;
+    justify-content: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    height: 45rem;
+    width: 30rem;
+  }
+  .form-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .form-hates-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  input {
+    height: 40px;
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .event {
+    font-size: x-large;
+  }
+  .date {
+    font-size: x-large;
+  }
+  .option {
+    font-size: x-large;
+    height: 50px;
+    width: 200px;
+  }
+  .form-button {
+    display: flex;
+
+    margin-left: 12rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 7.5rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  .delete-form-button {
+    display: flex;
+    margin-left: 12rem;
+    margin-top: 18rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 7.5rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .form-button:hover,
+  .delete-form-button:hover {
+    background-color: black;
+    color: white;
+  }
+  .sign-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 5px;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    height: 35rem;
+    width: 30rem;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 5px;
+    margin-top: 5rem;
+    margin-left: 12rem;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    height: 20rem;
+    width: 25rem;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-name {
+    width: 16rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  .new-account {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 8rem;
+    margin-left: 2rem;
+  }
+
+  .sign-button {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    height: 3.5rem;
+    width: 7rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .center-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1897,7 +2295,6 @@ input {
     display: flex;
     flex-direction: column;
 
-    width: 100px;
     column-width: 45px;
     column-gap: 0;
     column-rule: none;
@@ -1910,17 +2307,17 @@ input {
 
   .email-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    margin-left: 1rem;
+    width: 30rem;
     box-shadow: black 4px 4px 10px;
-    width: 45%;
-    margin-left: 6rem;
   }
 
   .email {
     font-size: 3rem;
-    justify-content: center;
-    margin-left: 6rem;
+    align-items: center;
+    margin-left: 1rem;
   }
 
   .email-list-info {
@@ -1936,6 +2333,13 @@ input {
     flex-wrap: wrap;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .email-truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .booking-title {
@@ -1965,5 +2369,172 @@ input {
     margin-top: 1rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+  }
+
+  .lower-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    column-count: 2;
+    width: 100%;
+  }
+
+  .add-show-form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+  .form-section {
+    display: flex;
+    justify-content: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    height: 45rem;
+    width: 30rem;
+  }
+  .form-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .form-hates-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  input {
+    height: 40px;
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .event {
+    font-size: x-large;
+  }
+  .date {
+    font-size: x-large;
+  }
+  .option {
+    font-size: x-large;
+    height: 50px;
+    width: 200px;
+  }
+  .form-button {
+    display: flex;
+
+    margin-left: 12rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 7.5rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  .delete-form-button {
+    display: flex;
+    margin-left: 12rem;
+    margin-top: 18rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 7.5rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .form-button:hover,
+  .delete-form-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .sign-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 5px;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    height: 35rem;
+    width: 30rem;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 5px;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    height: 20rem;
+    width: 25rem;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-name {
+    width: 16rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  .new-account {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    font-size: 2.75rem;
+    margin-top: 8rem;
+  }
+
+  .sign-button {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    height: 3.5rem;
+    width: 7rem;
+    color: white;
+    background-color: salmon;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .center-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -36,7 +36,7 @@ const SignUp = () => {
 
   return (
     <>
-      <div className="margins">
+      <div className="center-login">
         <header className="new-account">Create a new Account!</header>
         <div className="sign-form-section">
           <form onSubmit={submitForm} className="inputs">

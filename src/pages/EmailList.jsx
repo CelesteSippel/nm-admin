@@ -30,7 +30,9 @@ const EmailList = () => {
               {emailLists.map(emailList => {
                 return (
                   <ul>
-                    <li className="email-detail">{emailList.email}</li>
+                    <li className="email-detail email-truncate email-ul">
+                      {emailList.email}
+                    </li>
                   </ul>
                 )
               })}

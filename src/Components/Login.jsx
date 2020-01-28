@@ -50,7 +50,7 @@ const Login = () => {
       {successfullyCreated ? (
         <Redirect to={`/secret/${usernameFromApi}`} />
       ) : (
-        <div>
+        <div className="center-login">
           <header className="new-account">Welcome back!</header>
           <section className="login-form">
             <form onSubmit={submitForm} className="inputs">
