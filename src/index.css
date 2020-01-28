@@ -364,7 +364,7 @@ li {
 input {
   height: 40px;
   width: 200px;
-  border-radius: 10%;
+  border-radius: 0%;
 }
 
 .event {
@@ -377,10 +377,10 @@ input {
   font-size: x-large;
   height: 50px;
   width: 200px;
+  background-color: white;
 }
 .form-button {
   display: flex;
-
   margin-left: 16rem;
   margin-top: 4rem;
   font-size: 2rem;
@@ -389,7 +389,7 @@ input {
   color: white;
   background-color: salmon;
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 .delete-form-button {
@@ -958,7 +958,7 @@ input {
   input {
     height: 40px;
     width: 200px;
-    border-radius: 10%;
+    /* border-radius: 0%; */
   }
 
   .event {
@@ -1819,7 +1819,7 @@ input {
   input {
     height: 40px;
     width: 200px;
-    border-radius: 10%;
+    border-radius: 0%;
   }
 
   .event {
@@ -2096,7 +2096,7 @@ input {
   input {
     height: 40px;
     width: 200px;
-    border-radius: 10%;
+    border-radius: 0%;
   }
 
   .event {
@@ -2426,7 +2426,7 @@ input {
   input {
     height: 40px;
     width: 200px;
-    border-radius: 10%;
+    border-radius: 0%;
   }
 
   .event {
