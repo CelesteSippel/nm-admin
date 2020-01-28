@@ -629,17 +629,14 @@ input {
   .sub-nav {
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
     visibility: visible;
-
     padding: 0.5rem;
   }
 
   .nav-details {
     display: flex;
     flex-direction: row;
-
     color: white;
     padding: 1.5rem;
     font-size: 2rem;
