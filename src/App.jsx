@@ -7,7 +7,6 @@ import {
   Link,
 } from 'react-router-dom'
 
-// import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 import SignUp from './pages/SignUp'
 import Secret from './pages/Secret'
@@ -15,14 +14,13 @@ import Unauthorized from './pages/Unauthorized'
 import Shows from './pages/Shows'
 import EmailList from './pages/EmailList'
 import Bookings from './pages/Bookings'
-import Landing from './pages/Landing'
+import Login from './pages/Login'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Landing}></Route>
-        {/* <Route exact path="/homepage" component={HomePage}></Route> */}
+        <Route exact path="/" component={Login}></Route>
         <Route exact path="/signup" component={SignUp}></Route>
         <Route exact path="/secret/:username" component={Secret}></Route>
         <Route exact path="/unauthorized" component={Unauthorized}></Route>

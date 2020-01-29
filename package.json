@@ -9,7 +9,7 @@
     "setup-deploy": "app-app --deploy && yarn deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postdeploy": "echo 'Your site was deployed to https://nm-admin-celestelingo.netlify.com'"
+    "postdeploy": "echo 'Your site was deployed to https://new-mood-admin.netlify.com'"
   },
   "browserslist": [
     ">0.2%",
